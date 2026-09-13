@@ -1,0 +1,26 @@
+<div class="background-body">
+<div class="chat-container">
+  <h2>Crop Advisory Assistant</h2>
+
+  <div class="messages">
+    <div
+      *ngFor="let msg of messages"
+      class="bubble"
+      [ngClass]="msg.role"
+      [innerHTML]="formatText(msg.content)"
+    >
+    </div>
+    <div class="bubble assistant" *ngIf="loading">Thinking...</div>
+  </div>
+
+  <form (ngSubmit)="send()">
+    <input
+      type="text"
+      [(ngModel)]="currentMessage"
+      name="currentMessage"
+      placeholder="Describe your crop issue..."
+    />
+    <button type="submit" [disabled]="loading">Send</button>
+  </form>
+</div>
+</div>
