@@ -11,7 +11,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #b2e19f;
   box-shadow:0px 20px 20px rgba(3, 163, 46, 0.9);
- 
+
 }
 h2 {
     text-align: center;
@@ -46,8 +46,8 @@ h2 {
   border-bottom-right-radius: 2px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
-  
-  
+
+
 }
 .bubble.assistant {
   background-color: #b1ded9;
@@ -55,7 +55,7 @@ h2 {
   align-self: flex-start;
   border-bottom-left-radius: 2px;
   font-family: Arial, Helvetica, sans-serif;
- 
+
 }
 form {
   display: flex;
@@ -133,8 +133,4 @@ button:disabled {
 .bubble th {
   background-color: #ecf0f1;
   font-weight: bold;
-}
-.background-body{
-  background-color: #cfc6c3;
-  padding: 20px;
 }
