@@ -14,7 +14,7 @@ export interface ChatMessage {
 
 @Injectable({ providedIn: 'root' })
 export class CropService {
-  private baseUrl = 'http://localhost:8080/api/crop';
+  private baseUrl = 'http://localhost:8070/api/crop';
 
   constructor(private http: HttpClient) {}
 
@@ -28,7 +28,7 @@ export class CropService {
     if (!response.body) throw new Error('No response body');
     const reader = response.body.getReader();
     const decoder = new TextDecoder();
-    
+
     while (true) {
       const { done, value } = await reader.read();
       if (done) break;
